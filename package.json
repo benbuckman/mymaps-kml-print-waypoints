@@ -1,0 +1,21 @@
+{
+  "name": "mymaps-kml-print-waypoints",
+  "description": "Print HTML list of icons+titles+descriptions from KML/KMZ exported from Google My Maps",
+  "author": {
+    "name": "Ben Buckman",
+    "email": "ben@benbuckman.net",
+    "url": "http://benbuckman.net"
+  },
+  "bin": {
+    "mymaps-kml-print-waypoints": "./index.js"
+  },
+  "engines": {
+    "node": ">= 4.x"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "ejs": "^2.5.2",
+    "minimist": "^1.2.0",
+    "xml2js": "^0.4.17"
+  }
+}

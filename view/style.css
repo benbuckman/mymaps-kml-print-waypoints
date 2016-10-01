@@ -1,0 +1,56 @@
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 9pt;
+}
+
+ul, li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li.place {
+  margin-bottom: .7rem;
+}
+
+li.place {
+  margin-bottom: .7rem;
+}
+
+li.place:nth-child(odd) {
+  background: #F7F7F7;
+}
+
+li.place .icon {
+  width: 2rem;
+  margin-right: .5rem;
+  position: absolute;
+}
+
+li.place .number {
+  color: #333;
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 2rem;
+  position: absolute;
+  left: 2rem;
+}
+
+li.place .name {
+  margin-left: 3.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+li.place .description {
+  display: block;
+  font-size: .9rem;
+  margin-left: 3.5rem;
+}
+
+li.place .latlng {
+  color: #bbb;
+  display: block;
+  font-size: .7rem;
+  margin-left: 3.5rem;
+}

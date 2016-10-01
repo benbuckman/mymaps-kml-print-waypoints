@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="<%- cssDir %>/style.css" />
+</head>
+<body>
+<h1><%= kmlData.name %></h1>
+<% kmlData.Folder.forEach(function(folder) { %>
+    <h2><%= folder.name %></h2>
+
+    <ul class="places">
+      <% folder.Placemark.forEach(function(place) { %>
+        <% console.log(folder.name, place.name); %>
+        <li class="place">
+          <% if (iconMap[place.styleUrl[0]]) { %>
+          <img class="icon" data-icon="<%- place.styleUrl[0] %>" src="<%- iconMap[place.styleUrl[0]] %>" />
+          <% } %>
+
+          <% if (place.number) { %>
+          <div class="number"><%= place.number %></div>
+          <% } %>
+
+          <div class="name"><%= place.name %></div>
+          <div class="description"><%- place.description %></div>
+
+          <% if (place.Point && place.Point[0] && place.Point[0]) { %>
+          <div class="latlng"><%= place.Point[0].coordinates[0].replace(/,/, ', ') %></div>
+          <% } %>
+        </li>
+      <% }); //place %>
+    </ul>
+
+<% }); //folder %>
+</body>
+</html>

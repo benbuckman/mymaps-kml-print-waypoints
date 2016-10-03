@@ -1,7 +1,7 @@
 {
   "name": "mymaps-kml-print-waypoints",
   "description": "Print HTML list of icons+titles+descriptions from KML/KMZ exported from Google My Maps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Ben Buckman",
     "email": "ben@benbuckman.net",

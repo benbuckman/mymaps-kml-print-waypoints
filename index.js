@@ -16,7 +16,7 @@ function printUsage() {
   Print waypoints from Google My Maps KML/KMZ file
    
   Usage:
-    node ./index.js --kml=[path to input .kml file] --html=[path to output html file]
+    mymaps-kml-print-waypoints --kml=[path to input .kml file] --html=[path to output html file]
      
     Optional:
       --images=[path to \`images\` dir, extracted from \`.kmz\` file, if using]

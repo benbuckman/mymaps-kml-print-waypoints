@@ -13,9 +13,11 @@ Export your custom map to a KML or KMZ file.
 
 (KMZ is just a zip file, use `unzip` to extract.)
 
-Clone this repo and run `node ./index.js --kml=... --html=... [--images=...]`.
+`npm install -g mymaps-kml-print-waypoints`
 
-(See more details at `node ./index.js --help`.)
+`mymaps-kml-print-waypoints --kml=... --html=... [--images=...]`.
+
+(See more details at `mymaps-kml-print-waypoints --help`.)
 
 Intended as a one-off script, not to be used in a live application.
 
